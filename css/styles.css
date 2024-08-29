@@ -10881,10 +10881,15 @@ hr.divider-light {
 #mainNav .navbar-nav .nav-item .nav-link {
   color: rgba(252, 252, 247) ;
   font-family: "DM Sans", sans-serif;
-  font-weight: 350;
+  font-weight: 280;
   /* font-size: 1.2rem; */
-  padding: 0.75rem 0;
+  padding: 0.35rem 0;
 }
+
+.logo-nav {
+  margin-bottom: 20px;
+}
+
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
   color: #203F32;
 }
@@ -10897,7 +10902,8 @@ hr.divider-light {
     box-shadow: none;
     background-color: rgba(32, 63, 50, 0.99);
   }
-  
+
+
   #mainNav .navbar-brand {
     color: #FCFCF7;
   }
@@ -10907,7 +10913,7 @@ hr.divider-light {
   #mainNav .navbar-nav .nav-item .nav-link {
     color: #FCFCF7;
     /* font-size: 1rem; */
-    padding: 0.75rem 0;
+    padding: 0.25rem 0;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #ACBF9A;
@@ -11054,13 +11060,12 @@ hr.divider-light {
   background-attachment: center ;
   background-size: cover;
   max-height: 50rem;
-  min-height: 35rem;
+  min-height: 30rem;
 }
 
 .evolucion {
   
   padding-top: 3rem;
-  padding-bottom: 3rem;
   /* background: linear-gradient(to bottom, rgb(10 10 10 / 70%) 0%, rgb(24 24 24 / 50%) 80%), url(../assets/img/foto5.webp); 
   background-position: top;
   background-repeat: no-repeat;
@@ -11068,7 +11073,7 @@ hr.divider-light {
   background-size: cover;
   -webkit-background-size: cover; */
   max-height: 50rem;
-  min-height: 35rem;
+  min-height: 30rem;
 }
 
 /* .evolucion p {
@@ -11084,14 +11089,20 @@ hr.divider-light {
   justify-content: center;
   align-items: center;
   max-height: 50rem;
-  min-height: 35rem;
+  min-height: 30rem;
 }
+
+.altura-carrucel {
+  max-height: 50rem;
+  min-height: 10rem;
+}
+
+
 
 @media (max-width: 992px) {
 
   .evolucion {
     padding-top: 2rem;
-    padding-bottom: 2rem;
     background-attachment: scroll;
     height: auto;
     min-height: 15rem;
