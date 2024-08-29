@@ -4377,22 +4377,24 @@ textarea.form-control-lg {
   overflow-anchor: none;
   transition: var(--bs-accordion-transition);
 }
-@media (prefers-reduced-motion: reduce) {
-  .accordion-button {
-    transition: none;
-  }
+
+
+.accordion-button {
+  position: relative;
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+  text-underline-offset: 3px; /* Distancia entre el texto y el subrayado */
+  text-decoration-thickness: 1px; /* Grosor del subrayado */
+  transition: text-decoration-color 0.8s ease; /* Tiempo de transición para el color */
 }
+
+.accordion-button:hover,
 .accordion-button:not(.collapsed) {
-  color: #203F32;
+  text-decoration-color: #346955; /* Color del subrayado en estado activo o al pasar el cursor */
 }
 
-.accordion-button:not(.collapsed) .font-size-3 {
-  color: #203F32;
-}
 
-.accordion-button:not(.collapsed) .numero-romano {
-  color: #203F32;
-}
+
 
 .accordion-button:not(.collapsed)::after {
   transform: var(--bs-accordion-btn-icon-transform);
@@ -10868,7 +10870,7 @@ hr.divider-light {
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #203F32;
+  background-color: rgba(32, 63, 50, 0.99);
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
@@ -10890,10 +10892,12 @@ hr.divider-light {
   color: #ACBF9A !important;
 }
 @media (min-width: 992px) {
+
   #mainNav {
     box-shadow: none;
-    background-color: transparent;
+    background-color: rgba(32, 63, 50, 0.99);
   }
+  
   #mainNav .navbar-brand {
     color: #FCFCF7;
   }
@@ -10903,7 +10907,7 @@ hr.divider-light {
   #mainNav .navbar-nav .nav-item .nav-link {
     color: #FCFCF7;
     /* font-size: 1rem; */
-    padding: 0 1rem;
+    padding: 0.75rem 0;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #ACBF9A;
@@ -10913,7 +10917,7 @@ hr.divider-light {
   }
   #mainNav.navbar-shrink {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: #203F32;
+    background-color: rgba(32, 63, 50, 0.99);
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #FCFCF7;
@@ -11003,7 +11007,7 @@ hr.divider-light {
   min-height: 80vh;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgb(16 15 15 / 80%) 0%, rgb(32 32 31 / 80%) 100%), url(../assets/img/bg-principal.webp);
+  background: url(../assets/img/cam.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11039,6 +11043,18 @@ hr.divider-light {
   .masthead h2, .masthead .h2 {
     font-size: 3.25rem;
   }
+}
+
+.nuestra_historia {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: url(../assets/img/map.webp); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center ;
+  background-size: cover;
+  max-height: 50rem;
+  min-height: 35rem;
 }
 
 .evolucion {
@@ -11318,12 +11334,11 @@ hr.divider-light {
   letter-spacing: 2px;
 }
 
-.subrayado {
+.efecto {
   color: #ACBF9A;
-  text-decoration: underline;
-  text-decoration-color: #346955;
-  text-underline-offset: 10px;
 }
+
+
 
 .acordion-title {
     font-size: 1em;

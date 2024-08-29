@@ -51,10 +51,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    // Activate SimpleLightbox plugin for portfolio items
-    new SimpleLightbox({
-        elements: '#portfolio a.portfolio-box'
-    });
+    // Initialize AOS (Animate On Scroll)
     window.addEventListener('load', () => {
         AOS.init({
             duration: 1000,
@@ -63,4 +60,5 @@ window.addEventListener('DOMContentLoaded', event => {
             mirror: false
         });
     });
+
 });
