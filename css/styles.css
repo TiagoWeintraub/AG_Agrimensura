@@ -10887,7 +10887,6 @@ hr.divider-light {
 }
 
 .logo-nav {
-  margin-bottom: 20px;
   padding-left: 56px;
 }
 
@@ -10914,6 +10913,10 @@ hr.divider-light {
     background-color: rgba(32, 63, 50, 0.99);
   }
 
+  .logo-nav img {
+    height: 35px;
+
+  }
 
   #mainNav .navbar-brand {
     color: #FCFCF7;
