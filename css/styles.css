@@ -10888,6 +10888,17 @@ hr.divider-light {
 
 .logo-nav {
   margin-bottom: 20px;
+  padding-left: 56px;
+}
+
+.logo-nav img {
+  height: 40px;
+}
+
+@media (max-width: 767px) {
+  .logo-nav img {
+    height: 30px;
+  }
 }
 
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
@@ -11349,8 +11360,10 @@ hr.divider-light {
   color: #ACBF9A;
 }
 
-
-
 .acordion-title {
     font-size: 1em;
+}
+
+.footer {
+  background-color: #346955;
 }
