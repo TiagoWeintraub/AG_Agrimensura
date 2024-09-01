@@ -11027,7 +11027,7 @@ hr.divider-light {
   min-height: 80vh;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: url(../assets/img/pug.jpg);
+  background: url(../assets/img/cam_mobile.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11315,7 +11315,7 @@ hr.divider-light {
 
   .titulos-items {
     color: #ACBF9A;
-    font-weight: 300;
+    font-weight: 350;
     font-size: 1.4em;
   }
   .font-size-1 {
@@ -11341,19 +11341,6 @@ hr.divider-light {
 }
 
 
-.mapa-container {
-  width: 80%;
-  background-color: #000;
-  padding: 5px;
-  border-radius: 20px;
-}
-
-
-.mapa {
-  width: 99%;
-  min-height: 100%;
-  border-radius: 15px; /* Bordes redondeados */
-}
 
 .boton-mail {
   border: 0; 
@@ -11445,6 +11432,7 @@ hr.divider-light {
   /* cursor: pointer; */
   /* padding-right: 6px;
   padding-left: 6px; */
+  border: 1px solid #ACBF9A;
   border-radius: 30px;
   transition: background-color .3s;
   transition: color .3s;
@@ -11460,14 +11448,32 @@ hr.divider-light {
   margin-bottom: -3px;
 }
 
+.bi-linkedin, .bi-instagram {
+  color: white; 
+  font-size: 1.5em;
+  transition: color .3s;
+}
+
+
+.bi-linkedin:hover, .bi-instagram:hover {
+  color: #ACBF9A;
+}
+
 .regla {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background: url(../assets/img/map.webp); 
-  background-position: center;
+  background:
+    url('../assets/img/regla.webp') no-repeat center, #203f32e0;
+  background-size: cover, cover;
+  border: 1px solid #203f32e0;
+  box-shadow: 0 -1rem 0.5rem rgba(0, 0, 0, 0.15), 0 1rem 1.5rem rgba(0, 0, 0, 0.45);
+}
+
+.fondo-topografico {
+  background: url(../assets/img/topografia.webp);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-attachment: center ;
-  background-size: auto;
+  background-position: left center; /* Imagen pegada al lado izquierdo y centrada verticalmente */
 }
 
 /* Lista sin estilos */
@@ -11477,4 +11483,8 @@ hr.divider-light {
 
 .lista li {
   margin-top: 10px;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
 }
