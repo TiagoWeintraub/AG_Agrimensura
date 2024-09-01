@@ -11467,13 +11467,15 @@ hr.divider-light {
   background-size: cover, cover;
   border: 1px solid #203f32e0;
   box-shadow: 0 -1rem 0.5rem rgba(0, 0, 0, 0.15), 0 1rem 1.5rem rgba(0, 0, 0, 0.45);
+  max-width: 100%;
 }
 
 .fondo-topografico {
   background: url(../assets/img/topografia.webp);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: left center; /* Imagen pegada al lado izquierdo y centrada verticalmente */
+  background-position: left center;
+  max-width: 100%;
 }
 
 /* Lista sin estilos */
@@ -11488,3 +11490,8 @@ hr.divider-light {
 .bg-transparent {
   background-color: transparent !important;
 }
+
+/* Asegúrate de que el cuerpo y los elementos principales no excedan el ancho de la pantalla */
+/* body, html {
+  overflow-x: hidden;
+} */
