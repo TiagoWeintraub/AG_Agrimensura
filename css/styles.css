@@ -11033,7 +11033,7 @@ hr.divider-light {
   min-height: 80vh;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: url(../assets/img/cam_mobile.webp);
+  background: url(../assets/img/bg-principal.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11047,11 +11047,11 @@ hr.divider-light {
 }
 @media (min-width: 992px) {
   .masthead {
-    background: url(../assets/img/cam.webp);
+    background: url(../assets/img/bg-principal.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: cover;
+    background-size:cover;
     height: 100vh;
     min-height: 40em;
     padding-top: 4.5em;
@@ -11079,7 +11079,7 @@ hr.divider-light {
 .nuestra_historia {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background: url(../assets/img/map.webp); 
+  background: url(../assets/img/historia/map-topo.webp); 
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: center ;
@@ -11092,8 +11092,8 @@ hr.divider-light {
   
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background: url(../assets/img/nuestra_historia.webp); 
-  background-position: center;
+  background: url(../assets/img/historia/manchas-topo.webp); 
+  background-position: left;
   background-repeat: no-repeat;
   background-attachment: center ;
   background-size:contain;
@@ -11106,10 +11106,10 @@ hr.divider-light {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background: url(../assets/img/servicios.webp); 
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-attachment: center ;
-  background-size:cover;
+  background-size:contain;
 }
 
 #servicios .container {
@@ -11145,7 +11145,12 @@ hr.divider-light {
   .evolucion {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    background: url(../assets/img/historia/mapa-arg.webp); 
     background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* posicionado al centro */
+    background-position: center;
     height: auto;
     min-height: 30rem;
     max-height: 50rem;
@@ -11503,4 +11508,18 @@ hr.divider-light {
 .contenedor-carrucel {
   max-width: 100%;
   overflow: hidden;
+}
+
+
+.cover-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.contain-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
