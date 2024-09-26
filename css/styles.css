@@ -11151,7 +11151,9 @@ hr.divider-light {
 .altura-carrucel {
   max-width: 70rem;
   min-height: 10rem;
-}
+  border: #0c4128 solid .5rem;
+  border-radius: .5rem;
+  box-shadow: 0 -.5rem 1.5rem rgba(0, 0, 0, 0.1), 0 1rem 1.5rem rgba(0, 0, 0, 0.15);}
 
 .contenedor-carrucel {
   background: url(../assets/img/historia/manchas-topo.webp); 
@@ -11160,9 +11162,20 @@ hr.divider-light {
   background-size: contain;
   /* posicionado al centro */
   background-position: left;
+  padding: 1rem;
 }
 
 @media (max-width: 992px) {
+
+  .contenedor-carrucel {
+    background: url(../assets/img/historia/manchas-topo.webp); 
+    background-attachment: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* posicionado al centro */
+    background-position: left;
+    padding: 0rem;
+  }
 
   .evolucion {
     padding-top: 2rem;
@@ -11187,6 +11200,10 @@ hr.divider-light {
     background-repeat: no-repeat;
     background-attachment: center ;
     background-size:contain;
+  }
+
+  #servicios::before {
+    background: transparent;
   }
 
   .nuestra_historia {
