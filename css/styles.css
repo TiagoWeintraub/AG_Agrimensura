@@ -11094,7 +11094,7 @@ hr.divider-light {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background: url(../assets/img/historia/mapa-arg.webp); 
-  background-position: right 20px center;
+  background-position: right 120px center;
   background-repeat: no-repeat;
   background-attachment: center ;
   background-size:contain;
@@ -11103,15 +11103,29 @@ hr.divider-light {
 }
 
 #servicios {
+  position: relative;
   min-height: 30rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background: url(../assets/img/servicios/servicios.webp); 
+  background: none; /* Quitamos el background del contenedor principal */
+}
+
+#servicios::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../assets/img/historia/manchas-topo.webp);
   background-position: left;
   background-repeat: no-repeat;
   background-attachment: center;
-  background-size:contain;
+  background-size: contain;
+  transform: scale(-1, -1); /* Invertimos solo la imagen */
+  z-index: -1; /* La imagen se queda detrás del contenido */
 }
+
 
 #servicios .container {
   /* Maxima altura del contenedor */
@@ -11135,11 +11149,18 @@ hr.divider-light {
 }
 
 .altura-carrucel {
-  max-height: 50rem;
+  max-width: 70rem;
   min-height: 10rem;
 }
 
-
+.contenedor-carrucel {
+  background: url(../assets/img/historia/manchas-topo.webp); 
+  background-attachment: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* posicionado al centro */
+  background-position: left;
+}
 
 @media (max-width: 992px) {
 
