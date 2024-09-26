@@ -11151,9 +11151,11 @@ hr.divider-light {
 .altura-carrucel {
   max-width: 70rem;
   min-height: 10rem;
-  border: #0c4128 solid .5rem;
-  border-radius: .5rem;
-  box-shadow: 0 -.5rem 1.5rem rgba(0, 0, 0, 0.1), 0 1rem 1.5rem rgba(0, 0, 0, 0.15);}
+  border: #0c4128 solid .3rem;
+  border-radius: .3rem;
+  box-shadow: 0 -1rem 0.5rem rgba(0, 0, 0, 0.15), 0 1rem 1rem rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0 -.5rem 1.5rem rgba(0, 0, 0, 0.1), 0 1rem 1.5rem rgba(0, 0, 0, 0.15); */
+}
 
 .contenedor-carrucel {
   background: url(../assets/img/historia/manchas-topo.webp); 
@@ -11162,7 +11164,7 @@ hr.divider-light {
   background-size: contain;
   /* posicionado al centro */
   background-position: left;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 @media (max-width: 992px) {
