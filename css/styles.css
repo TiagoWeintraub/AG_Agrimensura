@@ -11404,6 +11404,8 @@ hr.divider-light {
     color: #ACBF9A;
     font-weight: 350;
     font-size: 1.4em;
+    /* Background color blanco difuminado */
+    background: rgba(252, 252, 247, 0.6);
   }
   .font-size-1 {
     color: #FCFCF7; 
