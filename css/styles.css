@@ -102,6 +102,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  max-width: 100%;
 }
 
 hr {
@@ -11316,6 +11317,11 @@ hr.divider-light {
   color: #ACBF9A;
   font-weight: 300;
   font-size: 1.6em;
+  background: rgba(252, 252, 247, 0.5);
+}
+
+.opacidad-acordion {
+  background: rgba(252, 252, 247, 0.4);
 }
 
 .font-size-1 {
@@ -11405,7 +11411,7 @@ hr.divider-light {
     font-weight: 350;
     font-size: 1.4em;
     /* Background color blanco difuminado */
-    background: rgba(252, 252, 247, 0.6);
+    background: rgba(252, 252, 247, 0.5);
   }
   .font-size-1 {
     color: #FCFCF7; 
